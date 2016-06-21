@@ -3,7 +3,7 @@ ngcalendar
 AngularJS calendar based on dhtmlxCalendar.
 
 <p>
-  <a href="https://gitter.im/miamarti/ngcalendar?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
+  <a href="https://gitter.im/miamarti/ng-calendar" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
   <img src="https://img.shields.io/badge/ngcalendar-release-green.svg">
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
