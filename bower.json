@@ -14,10 +14,6 @@
     "package.json",
     "screenshot.png"
   ],
-  "dependencies": {
-    "angular": "~1.2.0"
-  },
-  "devDependencies": {},
   "authors": [
       {
           "name": "Miller Augusto S. Martins",
