@@ -29,6 +29,10 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                         });
                     });
                     
+                    if (attrs.format) {
+                       myCalendar.setDateFormat(attrs.format);
+                    }
+                    
                     scope.$watch('ngModel', function (value) {
                         if(value && myCalendar){
                             myCalendar.setDate(new Date(value));
