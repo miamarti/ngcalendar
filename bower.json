@@ -2,7 +2,7 @@
   "name": "ngcalendar",
   "version": "1.0.0",
   "keywords": ["cit", "ngcalendar", "datepicker", "calendar"],
-  "main": ["dist/dhtmlxcalendar.js", "dist/dhtmlxcalendar.css", "dist/ngcalendar.js"],
+  "main": ["dist/dhtmlxcalendar.css", "dist/ngcalendar.js"],
   "ignore": [
     "bower_components",
     "node_modules",
