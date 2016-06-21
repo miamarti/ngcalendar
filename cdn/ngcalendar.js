@@ -26,7 +26,7 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     myCalendar.attachEvent("onClick", function(value){
                         scope.$apply(function () {
                             if (attrs.format) {
-                                scope.ngModel = attrs.format.replace('%d', value.getDate()).replace('%m', value.getMonth() + 1).replace('%Y', value.getFullYear().replace('%time', value.getHours() + ':' + value.getMinutes()));
+                                scope.ngModel = attrs.format.replace('%d', value.getDate()).replace('%m', value.getMonth() + 1).replace('%Y', value.getFullYear());
                             } else {
                                 scope.ngModel = value;
                             }
@@ -34,7 +34,7 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     });
                     
                     if (attrs.format) {
-                       myCalendar.setDateFormat(attrs.format.replace('%time',''));
+                       myCalendar.setDateFormat(attrs.format);
                     }
                     
                     scope.$watch('ngModel', function (value) {
