@@ -1,0 +1,32 @@
+{
+  "name": "ngcalendar",
+  "version": "1.0.0",
+  "keywords": ["cit", "ngcalendar", "datepicker", "calendar"],
+  "main": ["dist/dhtmlxcalendar.js", "dist/dhtmlxcalendar.css", "dist/ngcalendar.js"],
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "spec",
+    "src",
+    "vendor",
+    "Gruntfile.js",
+    "karma.conf.coffee",
+    "package.json",
+    "screenshot.png"
+  ],
+  "dependencies": {
+    "angular": "~1.2.0"
+  },
+  "devDependencies": {},
+  "authors": [
+      {
+          "name": "Miller Augusto S. Martins",
+          "email": "miller.augusto@gmail.com",
+          "homepage": "http://br.linkedin.com/pub/miller-augusto/2a/38b/832/"
+      }
+  ],
+  "repository": {
+      "type": "git",
+      "url": "git@github.com:miamarti/ngcalendar.git"
+  }
+}
