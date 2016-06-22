@@ -5,8 +5,9 @@ AngularJS calendar based on dhtmlxCalendar.
 <p>
   <a href="https://gitter.im/miamarti/ng-calendar" target="_blank"><img src="https://badges.gitter.im/Join%20Chat.svg"></a>
   <img src="https://img.shields.io/badge/ngcalendar-release-green.svg">
-  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
+  <img src="https://img.shields.io/badge/version-1.1.2-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+  <a href="https://github.com/miamarti/ngcalendar/tarball/master"><img src="https://img.shields.io/github/downloads/atom/atom/latest/total.svg"></a>
 </p>
 
 <a data-flickr-embed="true"  href="https://www.flickr.com/photos/43673546@N06/27207773213/in/dateposted-public/" title="ngcalendar"><img src="https://c6.staticflickr.com/8/7293/27207773213_1f075ef135_b.jpg" width="790" height="367" alt="ngcalendar"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
