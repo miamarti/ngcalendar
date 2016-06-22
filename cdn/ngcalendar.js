@@ -41,7 +41,7 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     
                     scope.$watch('ngModel', function (value) {
                         if(value && myCalendar){
-                            myCalendar.setDate(new Date(value));
+                            myCalendar.setDate(value);
                         }
                     });
                 }
