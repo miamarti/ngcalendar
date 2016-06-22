@@ -23,23 +23,25 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     }
                     
                     var myCalendar = new dhtmlXCalendarObject({button: element[0].id});
-                    myCalendar.attachEvent("onClick", function(value){
-                        scope.$apply(function () {
-                            if (attrs.format) {
-                                scope.ngModel = attrs.format.replace('%d', value.getDate()).replace('%m', value.getMonth() + 1).replace('%Y', value.getFullYear());
-                            } else {
-                                scope.ngModel = value;
-                            }
-                        });
-                    });
                     
                     if (attrs.format) {
-                       myCalendar.setDateFormat(attrs.format);
+                        myCalendar.setDateFormat(attrs.format);
+                        myCalendar.attachEvent("onClick", function(){
+                            scope.$apply(function () {
+                                scope.ngModel = myCalendar.getFormatedDate(attrs.format);
+                            });
+                        });
+                    } else {
+                        myCalendar.attachEvent("onClick", function(value){
+                            scope.$apply(function () {
+                                scope.ngModel = value;
+                            });
+                        });
                     }
                     
                     scope.$watch('ngModel', function (value) {
                         if(value && myCalendar){
-                            myCalendar.setDate(new Date(value));
+                            myCalendar.setDate(value);
                         }
                     });
                 }
