@@ -25,7 +25,7 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     var myCalendar = new dhtmlXCalendarObject({button: element[0].id});
                     
                     if (attrs.format) {
-                        myCalendar.setDateFormat(attrs.format);
+                        //myCalendar.setDateFormat(attrs.format);
                         myCalendar.attachEvent("onClick", function(){
                             scope.$apply(function () {
                                 scope.ngModel = myCalendar.getFormatedDate();
