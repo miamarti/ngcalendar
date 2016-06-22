@@ -27,7 +27,9 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     if (attrs.format) {
                         myCalendar.setDateFormat(attrs.format);
                         myCalendar.attachEvent("onClick", function(){
-                        	scope.ngModel = myCalendar.getFormatedDate();
+                            scope.$apply(function () {
+                                scope.ngModel = myCalendar.getFormatedDate();
+                            });
                         });
                     } else {
                         myCalendar.attachEvent("onClick", function(value){
