@@ -15,7 +15,8 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
             return {
                 restrict: 'A',
                 scope: {
-                    ngModel: '=ngModel'
+                    ngModel: '=ngModel',
+                    ngTrigger: '=ngTrigger'
                 },
                 link: function (scope, element, attrs, ctrl) {
                     if (element[0].id.trim() === '') {
@@ -29,12 +30,18 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                         myCalendar.attachEvent("onClick", function(){
                             scope.$apply(function () {
                                 scope.ngModel = myCalendar.getFormatedDate(attrs.format);
+                                if(scope.ngTrigger){
+                                    scope.ngTrigger(scope.ngModel);
+                                }
                             });
                         });
                     } else {
                         myCalendar.attachEvent("onClick", function(value){
                             scope.$apply(function () {
                                 scope.ngModel = value;
+                                if(scope.ngTrigger){
+                                    scope.ngTrigger(scope.ngModel);
+                                }
                             });
                         });
                     }
