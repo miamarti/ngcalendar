@@ -1,6 +1,6 @@
 {
   "name": "ngcalendar",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "keywords": ["cit", "ngcalendar", "datepicker", "calendar"],
   "main": ["dist/ngcalendar.css", "dist/ngcalendar.js"],
   "ignore": [
