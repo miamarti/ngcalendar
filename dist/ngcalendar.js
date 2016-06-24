@@ -31,7 +31,9 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                             scope.$apply(function () {
                                 scope.ngModel = myCalendar.getFormatedDate(attrs.format);
                                 if(scope.ngTrigger){
-                                    scope.ngTrigger(scope.ngModel);
+                                    setTimeout(function(){
+                                        scope.ngTrigger(scope.ngModel);
+                                    }, 500);
                                 }
                             });
                         });
@@ -40,7 +42,9 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                             scope.$apply(function () {
                                 scope.ngModel = value;
                                 if(scope.ngTrigger){
-                                    scope.ngTrigger(scope.ngModel);
+                                    setTimeout(function(){
+                                        scope.ngTrigger(scope.ngModel);
+                                    }, 500);
                                 }
                             });
                         });
