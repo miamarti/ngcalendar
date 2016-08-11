@@ -27,7 +27,18 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                     
                     if (attrs.format) {
                         myCalendar.setDateFormat(attrs.format);
+                        
                         myCalendar.attachEvent("onClick", function(){
+                            scope.$apply(function () {
+                                scope.ngModel = myCalendar.getFormatedDate(attrs.format);
+                                if(scope.ngTrigger){
+                                    setTimeout(function(){
+                                        scope.ngTrigger(scope.ngModel);
+                                    }, 500);
+                                }
+                            });
+                        });
+                        myCalendar.attachEvent("onChange", function(){
                             scope.$apply(function () {
                                 scope.ngModel = myCalendar.getFormatedDate(attrs.format);
                                 if(scope.ngTrigger){
@@ -39,6 +50,16 @@ if(typeof(window.dhx)=="undefined"){window.dhx=window.dhx4={version:"5.0",skin:n
                         });
                     } else {
                         myCalendar.attachEvent("onClick", function(value){
+                            scope.$apply(function () {
+                                scope.ngModel = value;
+                                if(scope.ngTrigger){
+                                    setTimeout(function(){
+                                        scope.ngTrigger(scope.ngModel);
+                                    }, 500);
+                                }
+                            });
+                        });
+                        myCalendar.attachEvent("onChange", function(value){
                             scope.$apply(function () {
                                 scope.ngModel = value;
                                 if(scope.ngTrigger){
