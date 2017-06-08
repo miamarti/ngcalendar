@@ -1,0 +1,25 @@
+{
+  "name": "ng-calendar",
+  "version": "1.2.3",
+  "description": "Start a NodeJS server with support for MongoDB in seconds using [NOFUL]",
+  "main": "dist/ngcalendar.js",
+  "author": "Miller Augusto S. Martins <miller.augusto@gmail.com>",
+  "contributors": [
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miamarti/ngcalendar"
+  },
+  "keywords": [
+    "ngcalendar", "datepicker", "calendar"
+  ],
+  "license": "MIT",
+  "homepage": "https://miamarti.github.io/ngcalendar/"
+}
