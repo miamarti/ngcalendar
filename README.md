@@ -1,4 +1,4 @@
-ngcalendar
+ngCalendar
 ===========
 AngularJS calendar based on dhtmlxCalendar.
 
