@@ -22,13 +22,14 @@ dhtmlxCalendar is a lightweight cross-browser JavaScript calendar which can be c
 dhtmlxCalendar features custom date format, the choice of any day as the first day of week, a year drop down list, and various skins and languages to choose from. The component can also be used as a date range selection tool, when dates prior to and after the available date range are disabled accordingly.
 
 
-<h3>Dependencies</h3>
+## Dependencies
 * AngularJS
 
-<h3>Implementation</h3>
+## Implementation
 ```
 <i class="input-calendar-icon" ng-calendar ng-model="modelDate"></i>
 ```
+
 The parameter bind = "ng-model" you are referring to variable $scope.modelDate
 
 ## Bower install de dependency
