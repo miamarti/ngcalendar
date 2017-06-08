@@ -11,7 +11,7 @@ AngularJS calendar based on dhtmlxCalendar.
   <img src="https://img.shields.io/bower/v/bootstrap.svg">
 </p>
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/43673546@N06/27207773213/in/dateposted-public/" title="ngcalendar"><img src="https://c6.staticflickr.com/8/7293/27207773213_1f075ef135_b.jpg" width="790" height="367" alt="ngcalendar"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/43673546@N06/27207773213/in/dateposted-public/" title="ngcalendar"><img src="https://c6.staticflickr.com/8/7293/27207773213_1f075ef135_b.jpg" width="790" height="367" alt="ngcalendar"></a>
 
 
 <h3>dhtmlxCalendar</h3>
