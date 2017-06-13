@@ -1,7 +1,7 @@
 {
   "name": "ng-calendar",
   "version": "1.2.4",
-  "description": "Start a NodeJS server with support for MongoDB in seconds using [NOFUL]",
+  "description": "AngularJS calendar based on dhtmlxCalendar.",
   "main": "dist/ngcalendar.js",
   "author": "Miller Augusto S. Martins <miller.augusto@gmail.com>",
   "contributors": [
